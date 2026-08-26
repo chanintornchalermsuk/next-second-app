@@ -9,7 +9,8 @@ export default function Page() {
       <hr />
       <h3>Link to Basic Routing Page</h3>
       <Link href="/register">[Register Page]</Link> <br/>
-      <Link href="/products">[Products Page]</Link>
+      <Link href="/products">[Products Page]</Link> <br/>
+      <Link href="/member">[Member Page]</Link>
       <hr />
       <h3>Link to Nested Routing Page</h3>
       <Link href="/products/keyboard">[Keyboard Page]</Link> <br/>
