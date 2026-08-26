@@ -1,31 +1,31 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Kanit } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const kanit = Kanit({    
+  subsets: ["thai", "latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "ชื่อเว็บ Web Name ....",
   description: "คำบรรยายเว็บ Web Description .....",
-  keywords: "คีย์เวิร์ด1, คีย์เวิร์ด2, คีย์เวิร์ด3, .....",  
+  keywords: ["คีย์เวิร์ด1", "คีย์เวิร์ด2", "คีย์เวิร์ด3"],
+  authors: [{ 
+    name: "ชื่อ/ทีมผู้พัฒนา", 
+    url: "https://www.example.com" 
+  }],    
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${kanit.className}`}
     >
       <body className="min-h-full flex flex-col">
-        <h1>WELCOME TO SAU</h1>
+        <h1 className="text-center text-blue-800 font-bold">WELCOME TO SAU</h1>
         <hr />
         {children}
       </body>

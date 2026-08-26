@@ -8,15 +8,15 @@ export default function Page() {
       <h1>Name: Chanintorn Chalermsuk</h1>
       <hr />
       <h3>Link to Basic Routing Page</h3>
-      <Link href="/register">[Register Page]</Link> <br/>
-      <Link href="/products">[Products Page]</Link> <br/>
-      <Link href="/member">[Member Page]</Link>
+      <Link href="/register">[หน้า Register Page]</Link> <br/>
+      <Link href="/products">[หน้า Products Page]</Link> <br/>
+      <Link href="/member">[หน้า Member Page]</Link>
       <hr />
       <h3>Link to Nested Routing Page</h3>
-      <Link href="/products/keyboard">[Keyboard Page]</Link> <br/>
-      <Link href="/products/mouse">[Mouse Page]</Link> <br/>
-      <Link href="/products/notebook/acer">[Notebook Acer Page]</Link> <br/>
-      <Link href="/products/notebook/lenovo">[Notebook Lenovo Page]</Link> <br/>
+      <Link href="/products/keyboard">[หน้า Keyboard Page]</Link> <br/>
+      <Link href="/products/mouse">[หน้า Mouse Page]</Link> <br/>
+      <Link href="/products/notebook/acer">[หน้า Notebook Acer Page]</Link> <br/>
+      <Link href="/products/notebook/lenovo">[หน้า Notebook Lenovo Page]</Link> <br/>
     </div>
   );
 }
